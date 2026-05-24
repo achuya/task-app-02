@@ -100,9 +100,9 @@ resource "aws_ecs_task_definition" "worker" {
       image = "${aws_ecr_repository.worker.repository_url}:latest"
       secrets = [
         {
-        name      = "DATABASE_URL"
-        valueFrom = "arn:aws:secretsmanager:ap-northeast-1:058898200941:secret:task-app-db-secret-2rUtEW"
-        }
+         name      = "DATABASE_URL"
+          valueFrom = "arn:aws:secretsmanager:ap-northeast-1:058898200941:secret:task-app-db-secret-sa2QZq"
+       }
       ]
       environment = [
         {
